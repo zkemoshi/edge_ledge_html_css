@@ -272,6 +272,7 @@ p {
   background-color: #ccc;
   padding: 0.3rem;
   border-radius: 5%;
+  margin-bottom: 3rem;
 }
 #showcase-pay .showcase-content {
   display: flex;
