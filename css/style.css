@@ -272,7 +272,6 @@ p {
   background-color: #ccc;
   padding: 0.3rem;
   border-radius: 5%;
-  margin-bottom: 3rem;
 }
 #showcase-pay .showcase-content {
   display: flex;
@@ -304,6 +303,7 @@ p {
   border-radius: 10%;
   padding: 0.4rem;
 }
+
 #contact-pay .back a {
   color: #f4f4f4;
 }
@@ -329,4 +329,8 @@ p {
   padding: 0.5rem;
   border-radius: 0.3rem;
   border: none;
+}
+
+.mt-3 {
+  margin-top: 3rem;
 }
