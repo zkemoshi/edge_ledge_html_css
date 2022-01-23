@@ -178,7 +178,13 @@ p {
   height: 100vh;
   color: #fff;
 }
-
+#showcase-pay .showcase-content .back {
+  color: #7ab436;
+  text-decoration: none;
+  background-color: #ccc;
+  padding: 0.3rem;
+  border-radius: 5%;
+}
 #showcase-pay .showcase-content {
   display: flex;
   flex-direction: column;
@@ -189,7 +195,6 @@ p {
   padding: 0 2rem;
   /* Overlay */
   position: absolute;
-  top: 65px;
   left: 0;
   right: 0;
   bottom: 0;
