@@ -2,7 +2,7 @@
 
 * {
   box-sizing: border-box;
-  margin:0;
+  margin: 0;
   padding: 0;
 }
 
@@ -28,7 +28,7 @@ p {
 }
 
 .text-center {
-  text-align:center;
+  text-align: center;
 }
 
 .text-primary {
@@ -60,6 +60,10 @@ p {
   font-size: 2rem;
   margin-bottom: 0.75rem;
   line-height: 1.1;
+  text-align: center;
+}
+.pay-info {
+  text-align: center;
 }
 
 .lead {
@@ -67,13 +71,25 @@ p {
   margin-bottom: 2rem;
 }
 
-.py-1 { padding: 1.5rem 0; }
-.py-2 { padding: 2rem 0; }
-.py-3 { padding: 3rem 0; }
+.py-1 {
+  padding: 1.5rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
 
-.p-1 { padding: 1.5rem; }
-.p-2 { padding: 2rem; }
-.p-3 { padding: 3rem; }
+.p-1 {
+  padding: 1.5rem;
+}
+.p-2 {
+  padding: 2rem;
+}
+.p-3 {
+  padding: 3rem;
+}
 
 .btn {
   display: inline-block;
@@ -82,6 +98,7 @@ p {
   padding: 0.5rem 2rem;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -107,7 +124,7 @@ p {
 #navbar {
   display: flex;
   position: sticky;
-  top:0;
+  top: 0;
   background: #333;
   color: #fff;
   justify-content: space-between;
@@ -150,10 +167,33 @@ p {
   /* Overlay */
   position: absolute;
   top: 65px;
-  left:0;
+  left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+/* Showcase Payment */
+#showcase-pay {
+  background: #333 url('../img/showcase.jpg') no-repeat center center/cover;
+  height: 100vh;
+  color: #fff;
+}
+
+#showcase-pay .showcase-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 2rem;
+  /* Overlay */
+  position: absolute;
+  top: 65px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 /* Section: What We Do */
@@ -189,6 +229,9 @@ p {
 }
 
 /* Section: Clients */
+#clients {
+  display: none;
+}
 #clients .items {
   display: flex;
 }
@@ -199,12 +242,28 @@ p {
   width: 60%;
 }
 
+/* Section: Downloads */
+
+#downloads .items {
+  display: flex;
+}
+
+#downloads .items img {
+  display: block;
+  margin: auto;
+  width: 60%;
+}
+#downloads div {
+  text-align: center;
+}
+
 /* Section: Contact */
 #contact {
   display: flex;
 }
 
-#contact .map, #contact .contact-form {
+#contact .map,
+#contact .contact-form {
   flex: 1;
 }
 

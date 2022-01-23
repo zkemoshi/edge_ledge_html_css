@@ -17,10 +17,13 @@
 }
 
 /* Smartphones */
-@media(max-width: 500px) {
+@media (max-width: 500px) {
   #navbar {
     flex-direction: column;
     align-items: center;
+  }
+  #navbar .desk {
+    display: none;
   }
 
   #navbar .logo {
@@ -52,6 +55,10 @@
     display: none;
   }
 
+  #downloads {
+    display: none;
+  }
+
   #contact {
     flex-direction: column;
   }
@@ -62,7 +69,7 @@
   }
 }
 
-@media(max-height: 568px) {
+@media (max-height: 568px) {
   #showcase .showcase-content {
     margin-top: -2rem;
     top: 140px;
