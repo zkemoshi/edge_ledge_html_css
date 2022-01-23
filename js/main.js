@@ -1,18 +1,18 @@
 // Initialize and add the map
 function initMap() {
   // Your location
-  const loc = { lat: 42.361145, lng: -71.057083 };
+  const loc = { lat: -6.768234, lng: 39.224536 };
   // Centered map on location
   const map = new google.maps.Map(document.querySelector('.map'), {
     zoom: 14,
-    center: loc
+    center: loc,
   });
   // The marker, positioned at location
   const marker = new google.maps.Marker({ position: loc, map: map });
 }
 
 // Sticky menu background
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
   if (window.scrollY > 150) {
     document.querySelector('#navbar').style.opacity = 0.9;
   } else {
@@ -20,9 +20,8 @@ window.addEventListener('scroll', function() {
   }
 });
 
-
 // Smooth Scrolling
-$('#navbar a, .btn').on('click', function(event) {
+$('#navbar a, .btn').on('click', function (event) {
   if (this.hash !== '') {
     event.preventDefault();
 
@@ -30,7 +29,7 @@ $('#navbar a, .btn').on('click', function(event) {
 
     $('html, body').animate(
       {
-        scrollTop: $(hash).offset().top - 100
+        scrollTop: $(hash).offset().top - 100,
       },
       800
     );
