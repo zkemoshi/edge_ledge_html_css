@@ -46,6 +46,9 @@
   #who .who-img {
     display: none;
   }
+  #clients {
+    display: block;
+  }
 
   #clients .items img {
     width: 80%;
